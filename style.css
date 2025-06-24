@@ -8,7 +8,7 @@ header {
     display: flex;
     background-color: #1d1d1d;
     height: 92px;
-    gap: 85px;
+    gap: 120px;
     align-items: center;
 }
 
@@ -94,42 +94,37 @@ nav ul a:hover::after {
 /* main */
 
 /* fisrt-container */
-.first-container-main>h1 {
+.first-container-main {
+    display: flex;
+}
+
+.first-container-main h1 {
     font-family: Arial;
     color: #ffffff;
     position: absolute;
-    z-index: 1;
-    font-size: 64px;
+    z-index: 2;
+    font-size: 70px;
     width: 30%;
     top: 271px;
     left: 549px;
     font-weight: 800;
 }
 
-.fon1 {
+.fon1_0 {
     width: 100%;
-    position: absolute;
-    z-index: -1;
 }
 
-.fon0 {
-    width: 100%;
-    position: relative;
-    z-index: 0;
-}
-
-.first-container-main>.knopochka {
+.knopochka {
     position: absolute;
     z-index: 1;
     top: 550px;
     left: 554px;
-    display: flex;
 }
 
-.first-container-main>.knopochka>button {
+.knopochka>button {
     width: 255px;
     height: 50px;
-    font-size: 14px;
+    font-size: 16px;
     font-family: Arial;
     text-transform: uppercase;
 }
@@ -143,4 +138,95 @@ nav ul a:hover::after {
     top: 5px;
     position: absolute;
     z-index: -1;
+}
+
+
+/* second-container-main */
+
+.second-container-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 403px;
+    height: 199px;
+}
+
+.second-container-main>h1 {
+    color: #1D1D1D;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.mini_second-container-main {
+    display: flex;
+    gap: 50px;
+    margin-top: 35px;
+}
+
+.mini_second-container-main h1 {
+    text-align: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.static_text span {
+    font-family: Arial;
+    font-size: 16px;
+
+}
+
+.static_text h1 {
+    font-family: Arial;
+    font-size: 64px;
+
+}
+
+.static_text::before {
+    content: "";
+    display: flex;
+    border-top: 6px #d7b56d solid;
+    width: 255px;
+
+}
+
+/* third-container-main */
+
+
+.third-container-main {
+    display: flex;
+    background-color: #1D1D1D;
+}
+
+.third-container-main>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 36px;
+   
+
+}
+
+.principles_of_our_work {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fotki_principles_of_our_work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+}
+
+.little-block {
+    
+}
+
+
+
+.big-block {
+    grid-area: 1 / 2 / 3 / 3;
 }
