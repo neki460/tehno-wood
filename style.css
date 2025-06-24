@@ -86,8 +86,8 @@ nav ul a:hover::after {
 
 .telefone {
     position: relative;
-    bottom: 11px;
-    right: 2px;
+    bottom: 9px;
+    left: 27px;
 }
 
 
@@ -193,40 +193,42 @@ nav ul a:hover::after {
 
 
 .third-container-main {
-    display: flex;
     background-color: #1D1D1D;
 }
-
-.third-container-main>h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    color: #ffffff;
+.third-container-main h1{
     font-size: 36px;
-   
-
+    font-family: Arial;
+    color: #ffffff;
 }
 
-.principles_of_our_work {
+.mini_third-container-main {
     display: flex;
-    flex-direction: column;
 }
-
-
-.fotki_principles_of_our_work {
+.photo_of_our_work {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-top: 50px;
 }
 
-.little-block {
-    
-}
-
-
-
-.big-block {
+.big_block{
+    display: flex;
+    height: auto;
     grid-area: 1 / 2 / 3 / 3;
+}
+.little_block {
+    display: flex;
+    height: auto;
+}
+
+.text_of_our_work {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 350px;
+    gap:100px;
+}
+.text_of_our_work p {
+    color: rgba(255, 255, 255, 1);
 }
