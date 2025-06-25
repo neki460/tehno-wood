@@ -59,10 +59,11 @@ nav ul a:hover {
 
 nav ul a:hover::after {
     content: "";
-    display: block;
+    display: flex;
     background-image: url('img/header/image.png');
     width: 25px;
     height: 12px;
+    
 }
 
 .text_by_logo {
@@ -199,27 +200,48 @@ nav ul a:hover::after {
     font-size: 36px;
     font-family: Arial;
     color: #ffffff;
+    font-weight: normal;
+    margin-left: 305px;
+    padding-bottom: 50px;
+    position: relative;
+    top: 40px;
 }
 
 .mini_third-container-main {
     display: flex;
+    margin:100px;
+    margin-left: 305px;
 }
 .photo_of_our_work {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(2, 255px);
+    grid-template-rows: repeat(2, 187px);
+    grid-column-gap: 25px;
+    grid-row-gap: 15px;
+    position: relative;
+    z-index: 1;
 }
-
+.photo_of_our_work::before {
+    content: "";
+    display: flex;
+    width: 422px;
+    height: 440px;
+    right: 145px;
+    bottom:100px;
+    border: 0.5px #d7b56d solid;
+    position: absolute;
+    z-index: -1;
+    
+}
 .big_block{
     display: flex;
-    height: auto;
+    height: 390px;
     grid-area: 1 / 2 / 3 / 3;
 }
 .little_block {
     display: flex;
-    height: auto;
+    height: 174px;
+    
 }
 
 .text_of_our_work {
