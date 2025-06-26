@@ -1,4 +1,4 @@
-* { 
+* {
     margin: 0;
 }
 
@@ -330,81 +330,90 @@ nav ul a:hover::after {
 .second_mini_fourth-container-main {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-
+    gap: 0em;
 }
 
 .section_with_photo_1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 2em;
-    margin-right: 2em;
+    column-gap: 1em;
+    margin-right: 0em;
+
 }
 
 .section_with_photo_2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 2em;
-    margin-right: 2em;
+    column-gap: 1em;
+    margin-right: 0em;
+
 }
 
 .section_with_photo_3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 2em;
+    column-gap: 1em;
     margin-right: 1em;
+
 }
 
 .mini_section_with_photo_1 {
     display: flex;
     flex-direction: column;
-    row-gap: 1em;
+    row-gap: 0.625em;
+
 }
 
 .photo1 {
-    width: 28.6875em;
-    height: 27.8125em;
+    width: 29em;
+    height: 27em;
 }
 
 .photo2 {
-    width: 19.375em;
-    height: 27.8125em;
+    width: 19em;
+    height: 27em;
 }
 
 .photo3 {
-    width: 19.375em;
-    height: 13.5em;
+    width: 19em;
+    height: 13em;
 }
 
 .photo4 {
-    width: 19.375em;
-    height: 13.5em;
+    width: 19em;
+    height: 13em;
 }
 
 .photo5 {
-    width: 13.875em;
-    height: 13.5em;
+    width: 13em;
+    height: 13em;
 }
 
 .photo6 {
-    width: 13.875em;
-    height: 13.5em;
+    width: 13em;
+    height: 13em;
 }
 
 .photo7 {
-    width: 39.6875em;
-    height: 13.5em;
+    width: 39em;
+    height: 13em;
 }
 
 .photo8 {
-    width: 28.6875em;
-    height: 13.5em;
+    width: 28em;
+    height: 13em;
 }
 
 .photo9 {
-    width: 39.6875em;
-    height: 13.5em;
+    width: 39em;
+    height: 13em;
+}
+
+
+img {
+    object-fit: cover;
+    display: block;
 }
